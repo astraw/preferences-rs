@@ -1,12 +1,11 @@
 [package]
-name = "preferences"
+name = "preferences-serde1"
 version = "2.0.0"
 authors = ["Andy Barron <AndrewLBarron@gmail.com>"]
+maintainers = ["Andrew Straw <strawman@astraw.com>"]
 
-description = "Read and write user-specific application data (in stable Rust)"
-documentation = "https://docs.rs/preferences"
-repository = "https://github.com/AndyBarron/preferences-rs"
-readme = "README.md"
+description = "Read and write user-specific application data"
+repository = "https://github.com/astraw/preferences-serde1"
 keywords = ["preferences", "user", "data", "persistent", "storage"]
 license = "MIT"
 

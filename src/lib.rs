@@ -21,7 +21,7 @@
 //!
 //! # Basic example
 //! ```
-//! extern crate preferences;
+//! extern crate preferences_serde1 as preferences;
 //! use preferences::{AppInfo, PreferencesMap, Preferences};
 //!
 //! const APP_INFO: AppInfo = AppInfo{name: "preferences", author: "Rust language community"};
@@ -55,7 +55,7 @@
 //! ```
 //! #[macro_use]
 //! extern crate serde_derive;
-//! extern crate preferences;
+//! extern crate preferences_serde1 as preferences;
 //! use preferences::{AppInfo, Preferences};
 //!
 //! const APP_INFO: AppInfo = AppInfo{name: "preferences", author: "Rust language community"};
@@ -88,7 +88,7 @@
 //! ```
 //! #[macro_use]
 //! extern crate serde_derive;
-//! extern crate preferences;
+//! extern crate preferences_serde1 as preferences;
 //! use preferences::{AppInfo, PreferencesMap, Preferences};
 //!
 //! const APP_INFO: AppInfo = AppInfo{name: "preferences", author: "Rust language community"};
@@ -117,7 +117,7 @@
 //! ```
 //! #[macro_use]
 //! extern crate serde_derive;
-//! extern crate preferences;
+//! extern crate preferences_serde1 as preferences;
 //! use preferences::{AppInfo, Preferences};
 //!
 //! const APP_INFO: AppInfo = AppInfo{name: "preferences", author: "Rust language community"};
@@ -188,7 +188,7 @@ static DEFAULT_PREFS_FILENAME: &'static str = "prefs.json";
 /// It's recommended to create a single `const` instance of `AppInfo`:
 ///
 /// ```
-/// use preferences::AppInfo;
+/// use preferences_serde1::AppInfo;
 /// const APP_INFO: AppInfo = AppInfo{name: "Awesome App", author: "Dedicated Dev"};
 /// ```
 ///
@@ -298,7 +298,7 @@ impl From<std::io::Error> for PreferencesError {
 /// `const` instance of `AppInfo` that represents your program:
 ///
 /// ```
-/// use preferences::AppInfo;
+/// use preferences_serde1::AppInfo;
 /// const APP_INFO: AppInfo = AppInfo{name: "Awesome App", author: "Dedicated Dev"};
 /// ```
 ///

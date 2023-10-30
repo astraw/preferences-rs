@@ -1,14 +1,16 @@
-# preferences
+# preferences-serde1
 _Read and write user-specific application data in Rust_
 
-[![crates.io: preferences](https://img.shields.io/crates/v/preferences.svg?label=crates.io%3A%20preferences)](https://crates.io/crates/preferences)
-[![Linux & OS X build status](https://img.shields.io/travis/AndyBarron/preferences-rs.svg?label=Linux%20%26%20OS%20X%20builds)](https://travis-ci.org/AndyBarron/preferences-rs)
-[![Windows build status](https://img.shields.io/appveyor/ci/AndyBarron/preferences-rs.svg?label=Windows%20builds)](https://ci.appveyor.com/project/AndyBarron/preferences-rs)
+This is a replacement for the old
+[`preferences`](https://crates.io/crates/preferences) crate to use `serde`
+version 1.0. To update your old `Cargo.toml` which previously looked like this:
 
-## Documentation
-https://docs.rs/preferences
+```toml
+preferences = "1.1"
+```
 
-## Installation
-Add the following to your `Cargo.toml`:
+use this:
 
-`preferences = "^1.1.0"`
+```toml
+preferences = {version="2.0.0", package = "preferences-serde1"}
+```
